@@ -1,0 +1,20 @@
+89b04b4 HEAD@{0}: merge develop: Fast-forward
+45675f1 HEAD@{1}: checkout: moving from develop to main
+89b04b4 HEAD@{2}: commit (merge): Merged and resolved conflict in index.html file
+fe867a4 HEAD@{3}: merge images: Fast-forward
+b75d11f HEAD@{4}: checkout: moving from styles to develop
+e241d7e HEAD@{5}: commit: linked styles to index file
+b69800b HEAD@{6}: commit: Add styles folder and some style to teg (p;h3;h3)
+b75d11f HEAD@{7}: checkout: moving from develop to styles
+b75d11f HEAD@{8}: checkout: moving from images to develop
+fe867a4 HEAD@{9}: checkout: moving from images to images
+fe867a4 HEAD@{10}: commit: Add imsage source href into index file
+9ee79a8 HEAD@{11}: checkout: moving from develop to images
+b75d11f HEAD@{12}: checkout: moving from images to develop
+9ee79a8 HEAD@{13}: checkout: moving from develop to images
+b75d11f HEAD@{14}: checkout: moving from images to develop
+9ee79a8 HEAD@{15}: commit: Create folder images;Add some image
+b75d11f HEAD@{16}: checkout: moving from develop to images
+b75d11f HEAD@{17}: commit: Add empty index.html
+45675f1 HEAD@{18}: checkout: moving from main to develop
+45675f1 HEAD@{19}: commit (initial): Init commit
