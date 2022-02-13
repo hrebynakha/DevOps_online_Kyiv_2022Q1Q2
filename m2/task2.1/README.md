@@ -10,7 +10,7 @@ In this guid i'll show how  to :
 ### Host machine configuration
 
 IP configuration
-[Screen IP Wi-Fi Adapter](images\Screenshot_1.png)
+[Screen IP Wi-Fi Adapter](\images\Screenshot_1.png)
 ``` 
  IPv4 Address. . . . . . . . . . . : 192.168.88.129
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
