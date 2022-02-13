@@ -103,14 +103,17 @@ VM Goup and Cloning result:
 For take a shnapshots usage the snapshots menu (Ctrl+Shift+T):
 Create file snap.txt in the text shap1_test
 ![Screen snap1 file](images/Screenshot_11.png)
+
 Take snapshot
 Create the file snap2.txt with the text snap2_test
 ![Screen  snap 2 file](images/Screenshot_12.png)
+
 We got the next snapshots tree:
 ![Screen snapshots tree](images/Screenshot_13.png)
 
 Return to snapshot 1 with Clone function:
 ![Screen Clone-Snap-1](images/Screenshot_14.png)
+
 ## Export & Import
 For export VM configuration use the **Export OCI** wizard
 ![Screen Export progress](images/Screenshot_15.png)
