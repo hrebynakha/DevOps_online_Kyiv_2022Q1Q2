@@ -6,23 +6,30 @@ In this guid i'll show how  to :
 - network confiuration , DHCP, NAT,port forfradig
 - working with Vagrand Software
 - ect.
-- 
+
 ### Host machine configuration
 
-IP configuration
+IP configuration follow command in **cmd** or **PowerSell**
+
+`ipconfig`
+Host machine WiFi Adapter ip configuration:
+
 ![Screen IP Wi-Fi Adapter](images/Screenshot_1.png)
-``` 
- IPv4 Address. . . . . . . . . . . : 192.168.88.129
+
+** 
+   IPv4 Address. . . . . . . . . . . : 192.168.88.129
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . : 192.168.88.1
-```
-![Screen VM Box Adapter](images/Screenshot_2.png)
-Virtual Box Network Adpter
-```
- IPv4 Address. . . . . . . . . . . : 192.168.74.1
+**
+
+Virtual Box Network Adpter  ip configuration:
+**
+   IPv4 Address. . . . . . . . . . . : 192.168.74.1
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . :
-```
+**
+
+![Screen VM Box Adapter](images/Screenshot_2.png)
+
 About Host Machine
 ![Screen  host configuration](images/Screenshot_3.png)
 ` Get-ComputerInfo | Select-Object OSVersion,OSBuildNumber,CsUserName,CsDomain,WindowsProductName,WindowsVersion
@@ -51,19 +58,19 @@ After instaling **Ubuntu Server 20.04 LTS** and first runnig we got next:
 - machine name: **vm-1-hrebynakha**
 - ip address : **10.13.113.4**
 
-[Screen ip config on **vm-1-hrebynakha**](images/Screenshot_6.png)
+![Screen ip config on **vm-1-hrebynakha**](images/Screenshot_6.png)
 
 Connect to machine via ssh
-[Screen ssh d0s@127.0.0.4 -p 1022](images/Screenshot_7.png)
+![Screen ssh d0s@127.0.0.4 -p 1022](images/Screenshot_7.png)
 
-[Screen ip config on machine](images/Screenshot_8.png)
+![Screen ip config on machine](images/Screenshot_8.png)
 
-Also we create Desctop Ubutu version for testing
+Also we create Desktop Ubutu version for testing
  configuration of this VM:
  - name vm : **VM-2**
  - hostname **vm-2-hrebynakha**
  - ip : **10.13.113.5**
- - 
+  
 ### Cloning
 Before cloning shutdown the machine
 `sudo shutdown now`
@@ -109,15 +116,15 @@ Return to snapshot 1 with Clone function:
 ![Screen Clone-Snap-1](images/Screenshot_14.png)
 ## Export & Import
 For export VM configuration use the **Export OCI** wizard
-[Screen Export progress](images/Screenshot_15.png)
+![Screen Export progress](images/Screenshot_15.png)
 Import:
-[Screen Import progress](images/Screenshot_16.png)
+![Screen Import progress](images/Screenshot_16.png)
 ## Share Folder
 Creating share folder from Ubuntu Desktop and Host (Windows OS)
 We creating early VM with name VM-2 and hostname **vm-2-hrebynakha**
 In runned mashine we Clicke to *Device-->Insert Guest ..*
 When we confirm setum on machine we have seen the output of insatalling some need modeles:
-[Screen Installing  progress](images/Screenshot_17.png)
+![Screen Installing  progress](images/Screenshot_17.png)
 After module success installed turn off the machine and make Folder.
 
 From Powershelle create new directory
