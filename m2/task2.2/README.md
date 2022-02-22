@@ -65,3 +65,24 @@ Creating and attching disk to VM from management console
 Result on VM:
 
 ![disk list](images/Screenshot_12.png)
+
+![disk list](images/Screenshot_13.png)
+
+
+![disk list](images/Screenshot_14.png)
+
+
+Get list of exisiting VM:
+![disk list](images/Screenshot_15.png)
+Get information about disk :
+`Get-AzDisk | Select-Object Name,DiskState,Location,DiskSizeGB,TimeCreated`
+
+![disk list](images/Screenshot_16.png)
+
+Reatacching disk to vm-2
+
+![disk list](images/Screenshot_17.png)
+
+Result is (mashine name keep old)
+
+![disk list](images/Screenshot_18.png)
