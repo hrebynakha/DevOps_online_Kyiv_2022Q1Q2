@@ -14,28 +14,32 @@
 
 ![sudo](images/Screenshot_2.png)
 
+> If we loggined as root(sudo) than the charter **$** cahge to **#**
+
 - Using `passwd` command
+
+![passwd](images/Screenshot_3.png)
 
 > This cahged the file located in **/etc/shdow** directory
 
 `cat /etc/shadow`
 
-![passwd](images/Screenshot_3.png)
+Before change the password
 ![passwd](images/Screenshot_4.jpg)
+After password changed 
 ![passwd](images/Screenshot_5.jpg)
 
 - Login to server using **ssh** and **Powershell** command
 
-> Command in **Windows Terminal** 
+> Command `ssh username@serverip` in **Windows Terminal**  
 
 ![ssh](images/Screenshot_6.png)
 
-> Loggined via **ssh**
 
+Loggined via **ssh**
 ![ssh](images/Screenshot_7.png)
 
-> Get the sudo (root) rights
-
+Get the sudo (root) rights
 ![ssh](images/Screenshot_8.png)
 
 - Command for chaging user personal information
@@ -44,30 +48,26 @@
 
 `man chfn`
 
-`chfn d0s -w "2003"`
-
-- manual about **finger** command
-
+Manual about **finger** command
 ![finger](images/Screenshot_10.png)
 
-`finger d0s`
+For expample chage the user telephone number to 2003 `chfn d0s -w "2003"`
+
+Read the information about user `finger d0s`
 
 ![finger](images/Screenshot_11.png)
 
-- chaging information about user
-
+To chaging information about user usinag the next command:
 `chfn --extrausers`
 
-![chfn ](images/Screenshot_13.png)
+![chfn ](images/Screenshot_13.png) 
 
-- and after set information
-
-`finger d0s`
+Make sure that  the information has been set: `finger d0s`
 
 ![finger](images/Screenshot_12.png)
 
 
-- Using  **less** and **more** command  View the contents of files
+- Using  **less** and **more** command  to view the contents of files
 
 `less /bin/gettext.sh`
 
