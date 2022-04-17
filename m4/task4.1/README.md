@@ -204,3 +204,9 @@ Using **df** to determine the type of file in the system
 
 > The **tmpfs** and **squashfs** is a *Temproary* file sysytem to only  reading information.
  Follow link to read more information  - [Wiki](https://uk.wikipedia.org/wiki/Tmpfs)  
+
+
+ To find the las modify files using the command  `find /etc -mindepth 1 -maxdepth 1 -ctime -3`
+ Where the ctime is a cretion time (- 3 days ago)
+
+![find items last accessed](images/Screenshot_35.png) 
