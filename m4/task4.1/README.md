@@ -26,6 +26,7 @@
 
 Before change the password
 ![passwd](images/Screenshot_4.jpg)
+
 After password changed 
 ![passwd](images/Screenshot_5.jpg)
 
@@ -133,8 +134,8 @@ root@vm-4:/home/d0s#
 
 
 - using **ls** command 
-> Getting tha help about this command
-`man ls`
+> Getting the help about this command `man ls`
+
 ![ls](images/Screenshot_24.png)
 
 ```
@@ -144,24 +145,28 @@ ls -al
 ```
 ![ls](images/Screenshot_25.png)
 
-- using  I (Input) / O (Output) command **</>**
+- using  I (Input) / O (Output) command **</>** , working with file and folder(create,delete,move etc.)
+
 `tree /home > testfile.txt`
 ![ls](images/Screenshot_26.png)
 
-- using **copy** command
+Using `cp` command to copy file
 
 ` cp ./testfile.txt /home/d0s/`
 
 ![ls](images/Screenshot_27.png)
 
-- usig **mkdir** command we have created the folder named *folder*
-- using **ln** command we created soft and hard link
+Usig `mkdir` command we have created the folder named *folder*
+Using `ln` command we created soft and hard link
+
 ![ln](images/Screenshot_28.png)
 
-- using **mv** commamnd to rename the files
+Using `mv` commamnd to rename the files
+
 ![mv](images/Screenshot_29.png)
 
-- using **remove** command
+Using **remove** command to delete the files or folders
+
 `rm -rf folder/`
 `rm testfile.txt`
 
@@ -184,7 +189,7 @@ sequence.
 character sequence.
 `sudo find /etc -name "*host*" -type f -print`
 ![find](images/Screenshot_32.png)
->Also we can using the **grep** command to find duplicate a similar command using in output 
+> Also we can using the **grep** command to find duplicate a similar command using in output 
 
 ![find & grep](images/Screenshot_33.png)
 
