@@ -25,9 +25,11 @@
 `cat /etc/shadow`
 
 Before change the password
+
 ![passwd](images/Screenshot_4.jpg)
 
-After password changed 
+After password changed
+
 ![passwd](images/Screenshot_5.jpg)
 
 - Login to server using **ssh** and **Powershell** command
@@ -147,19 +149,20 @@ ls -al
 
 - using  I (Input) / O (Output) command **</>** , working with file and folder(create,delete,move etc.)
 
-`tree /home > testfile.txt`
+The output of command we can write into file using the **>** charter  `tree /home > testfile.txt`
+
 ![ls](images/Screenshot_26.png)
 
-Using `cp` command to copy file
-
-` cp ./testfile.txt /home/d0s/`
+Using `cp` command to copy file ` cp ./testfile.txt /home/d0s/`
 
 ![ls](images/Screenshot_27.png)
 
-Usig `mkdir` command we have created the folder named *folder*
-Using `ln` command we created soft and hard link
+Using `mkdir` command we have created the folder named *folder* .
+With `ln` command we created soft and hard link .
 
 ![ln](images/Screenshot_28.png)
+
+> In terminal links has other color than all of files and folders
 
 Using `mv` commamnd to rename the files
 
@@ -174,26 +177,26 @@ Using **remove** command to delete the files or folders
 
 ![ls](images/Screenshot_30.png)
 
-> Copy file with another name command
+To copy file with another name use the command `cp .bash_history ./test/labwork2`
 
-`cp .bash_history ./test/labwork2`
+- Find all files with that contain some words
 
- - Find all files that contain the squid and traceroute
-sequence.
-`locate squid`
+To find the files with that contain the **squid** and **traceroute**
+sequence use the command  `locate squid` and  `locate traceroute`
 
-`locate traceroute`
 ![locate](images/Screenshot_31.png)
 
-- using the find command, find all files in the /etc directory containing the host
-character sequence.
-`sudo find /etc -name "*host*" -type f -print`
+Using the find command, find all files in the /etc directory containing the host
+character sequence `sudo find /etc -name "*host*" -type f -print` .
+
 ![find](images/Screenshot_32.png)
 > Also we can using the **grep** command to find duplicate a similar command using in output 
 
 ![find & grep](images/Screenshot_33.png)
 
-- using **df** to determine the type of file in the system
+- File system
+
+Using **df** to determine the type of file in the system
 
 ` df -Th`
 
