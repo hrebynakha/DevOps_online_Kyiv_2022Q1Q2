@@ -50,11 +50,11 @@ Follow `id` we can get own UID
 
 result of sudo(root) user:
 
-![root](images/Screenshot_1.jpg)
+![root](images/Screenshot_1.png)
 
 and for user  simple account
 
-![d0s](images/Screenshot_2.jpg)
+![d0s](images/Screenshot_2.png)
 
 # 3
 
@@ -70,7 +70,7 @@ Groups in Linux are defined by GIDs (group IDs).
 
 Follow command `groups username`  we cann get the information of user in group
 
-![d0s](images/Screenshot_6.jpg)
+![d0s](images/Screenshot_6.png)
 
 
 # 5 
@@ -79,7 +79,7 @@ To add/create a new user, you’ve to follow the command `useradd` or `adduser` 
 
 Examle of executing command `useradd username`
 
-![d0s](images/Screenshot_5.jpg)
+![d0s](images/Screenshot_5.png)
 
 # 6
 
@@ -101,27 +101,28 @@ To remove user from system use the command  `userdel username`
 
 # 9
 
-To lock a user account use the command `usermod -L username`  or `passwd -l username` , where the **username** is a user login name, that we want to lock
+To lock a user account use the command `usermod -L username`  or `passwd -l username` , where the **username** is a user login name, that we want to lock.
+
 To verify get the **/etc/shadow/** file contents:
 
-![test1](images/Screenshot_7.jpg)
+![test1](images/Screenshot_7.png)
 
 > The "!" in user column means that user is locked.
 
 To unlocking a user account we can use the command `passwd -u username`
 
-![test1](images/Screenshot_8.jpg)
+![test1](images/Screenshot_8.png)
 
 # 10
 
 The quick way to remove/delete a user password is pass --delete option to the passwd command.We need loggined as root user (using sudo command/su) command and type the following command: `passwd --delete username` or `passwd -d username`
 
-![test1](images/Screenshot_9.jpg)
+![test1](images/Screenshot_9.png)
 
 # 11
 
 To display the extended format of information about the directory
-![test1](images/Screenshot_9.jpg)
+![test1](images/Screenshot_9.png)
 
 The first character shows the file type. In this example, the first character is -, which indicates a regular file. Values for other file types are as follows:
 
@@ -169,7 +170,7 @@ To cahne owner of file(directory) can be used the next command `chown username f
 
 An example change owner from **root** to **d0s** (an account):
 
-![test1](images/Screenshot_11.jpg)
+![test1](images/Screenshot_11.png)
 
 # 15
 
@@ -208,7 +209,8 @@ Create a directory and provide all the users read-write-execute access to it :
 ` chmod 777 allAccess/`
 
 ` ls -ld allAccess `
-![test1](images/Screenshot_12.jpg)
+
+![test1](images/Screenshot_12.png)
 
 So we see that a directory named **allAccess** is created and read-write-execute access to this directory is given to all the users through chmod command.
 
@@ -218,12 +220,13 @@ For example:
 
 ` ls -l allAccess/`
 
-![test1](images/Screenshot_13.jpg)
+![test1](images/Screenshot_13.png)
 
 The files test_file_user0.txt  and test_file_user1.txt are created by different users but have read-write-execute access on for all the users. This means that the user **d0s** can delete or rename the file created by user **test1**.
+
 An examle of  renaming file 
 
-![test1](images/Screenshot_15.jpg)
+![test1](images/Screenshot_15.png)
 
 In order to avoid this, sticky bit can be set on the directory allAccess.
 
@@ -233,13 +236,13 @@ Now, turn ON the sticky bit on the directory by using +t flag of chmod command.
 
 ` ls -ld allAccess/`
 
-![test1](images/Screenshot_14.jpg)
+![test1](images/Screenshot_14.png)
 
 As can be observed, a permission bit **t** is introduced in the permission bits of the directory.
 
 Now, if the user **d0s** tries to rename the file **test_file_user1_renamed_by_dos.txt**, here is what happens :
 
-![test1](images/Screenshot_16.jpg)
+![test1](images/Screenshot_16.png)
 
 So we see that the operation was not permitted.
 
@@ -247,6 +250,7 @@ So we see that the operation was not permitted.
 # 16
 What file attributes should be present in the command script - executable
 `sudo chmod +x filename`
+
 For examle write simle script :
 
 ```
@@ -261,12 +265,12 @@ done
 ```
 Get the information about rights:
 
-![test](images/Screenshot_17.jpg)
+![test](images/Screenshot_17.png)
 
 Where we tring to run script we got an error *-bash: ./test.sh: Permission denied*
 This happend becouse we do not have permission on file to execute this.
 
-![test](images/Screenshot_18.jpg)
+![test](images/Screenshot_18.png)
 
 And now we get the otput of our script:
-![test](images/Screenshot_19.jpg)
+![test](images/Screenshot_19.png)
