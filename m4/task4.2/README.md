@@ -127,22 +127,22 @@ To display the extended format of information about the directory
 The first character shows the file type. In this example, the first character is -, which indicates a regular file. Values for other file types are as follows:
 
 
-- - Regular file.
-b - Block special file.
-c - Character special file.
-d - Directory.
-l - Symbolic link.
-n - Network file.
-p - FIFO.
-s - Socket.
+- "-" - Regular file.
+- b - Block special file.
+- c - Character special file.
+- d - Directory.
+- l - Symbolic link.
+- n - Network file.
+- p - FIFO.
+- s - Socket.
 
 The next nine characters are showing the file permissions. The first three characters are for the user, the next three are for the group, and the last three are for others. You can change the file permissions with the chmod command. The permission character can take the following value:
 
-r - Permission to read the file.
-w - Permission to write to the file.
-x - Permission to execute the file.
-s - setgid bit.
-t - sticky bit
+- r - Permission to read the file.
+- w - Permission to write to the file.
+- x - Permission to execute the file.
+- s - setgid bit.
+- t - sticky bit
 
 # 12 
 
@@ -162,7 +162,22 @@ Each file or directory has three basic permission types:
 Viewing the permissions by command `ls -l`
 
 # 13
+First of all determinate **Who am I**
+If you have not become another user, your ID is still the one you used to log in. Command ` whoami` show the account name.
 
+Next step is **What groups am I in**
+
+Determining group membership
+
+`id`
+
+Determining file ownership
+
+` ls ‑l filename`
+
+Permissions and directories
+
+`ls ‑l /home`
 
 
 # 14
