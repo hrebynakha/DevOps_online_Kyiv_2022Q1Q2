@@ -54,4 +54,52 @@ Script located with name **apl.sh**
 
 Test result of some commads:
 
-![--target ](images/Screenshot_4.png)
+![alp.sh](images/Screenshot_4.png)
+
+# C. Create a data backup script that takes the following data as parameters:
+
+### Path to the syncing directory set with arg syncdir
+
+### The path to the directory where the copies of the files will be stored sets with argumet target
+
+Simple examles of using sript. 
+Lets create directory with name **backupsync** and create there two file with name **tst.txt**, **tst2.txt**
+
+
+Run our script with target directory **backuptarget** 
+
+`sudo bash bckplog.sh --syncdir ./backupsync/ --target ./backuptarget
+`
+
+We recive  the next result: 
+
+![bckup](images/Screenshot_5.png)
+
+Changing the file contet and resync this:
+
+![bckup](images/Screenshot_6.png)
+
+Remove file adn resync this:
+
+![bckup](images/Screenshot_7.png)
+
+Log information writes to **/var/log/bckplog.log** :
+
+![bckup](images/Screenshot_8.png)
+
+Shedule script use the `cudo crontab -e` command:
+and add next to end of file.
+```
+* * * * * bash /home/d0s/bckplog.sh --syncdir /home/d0s/backupsync/ --target /home/d0s/backup_123
+```
+> **_NOTE_** We chaged the directory output to show that script work in background 
+
+![bckup](images/Screenshot_10.png)
+
+> **_NOTE_** Also chaged the directory log output to show that script work in background 
+
+![bckup](images/Screenshot_11.png)
+
+File syncing!
+
+![bckup](images/Screenshot_12.png)
