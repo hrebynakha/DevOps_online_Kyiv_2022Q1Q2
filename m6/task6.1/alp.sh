@@ -88,7 +88,7 @@ then
 	then
 		${1/"--"/""} $2 
 	fi
-       shift
+        shift
     done
 else
     # script do not recive any args
