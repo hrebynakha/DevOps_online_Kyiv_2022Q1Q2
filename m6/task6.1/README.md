@@ -87,7 +87,7 @@ Log information writes to **/var/log/bckplog.log** :
 
 ![bckup](images/Screenshot_8.png)
 
-Shedule script use the `cudo crontab -e` command:
+Shedule script use the `sudo crontab -e` command:
 and add next to end of file.
 ```
 * * * * * bash /home/d0s/bckplog.sh --syncdir /home/d0s/backupsync/ --target /home/d0s/backup_123
