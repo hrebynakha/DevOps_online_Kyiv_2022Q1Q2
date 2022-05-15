@@ -32,6 +32,8 @@ After password changed
 
 ![passwd](images/Screenshot_5.jpg)
 
+## SSH-Connecting
+
 - Login to server using **ssh** and **Powershell** command
 
 > Command `ssh username@serverip` in **Windows Terminal**  
