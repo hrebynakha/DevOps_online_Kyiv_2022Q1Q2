@@ -272,3 +272,4 @@ And run test ` ssh d0s@127.0.0.4 -p 1022` :
 ![ssh](images/Screenshot_23.png)
 
 
+Detail about port forwarding [here](../task2.1/README.md#networking)
