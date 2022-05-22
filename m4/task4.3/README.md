@@ -195,6 +195,22 @@ More info [here](../task4.1/README.md/#ssh-connecting)
 
 Implement basic SSH settings to increase the security of the client-server connection (atleast)
 
+The basic SSH setting configurating in file **/etc/ssh/sshd_config**
+
+Opne file and set configuration:
+
+`vi /etc/ssh/sshd_config`
+
+Set  RSA and Public key auth to **yes**
+
+```
+RSAAuthentication yes
+PubkeyAuthentication yes
+
+```
+
+![sshconfig](images/Screenshot_24.png)
+
 ## 3 
 
 List the options for choosing keys for encryption in SSH. Implement 3 of them.
@@ -202,11 +218,57 @@ List the options for choosing keys for encryption in SSH. Implement 3 of them.
 SSH Keys can be crypted by RSA, DSA, ECDSA, or EdDSA hash algoritm.
 
 
+In **Windows Powershell** Generate the **RSA** key type:
 
-`ssh -i C:\Users\d0s/.ssh/ssh_rsa.pub d0s@192.168.0.172`
+`ssh-keygen -t rsa -C "d0s@192.168.0.172"`
+
+> This command will generete two keys
+> also yo cau use the passphrathe or set it to empty
+
+In folder **.ssh** creating new files: *id_rsa* and *id_rsa.pub*
+
+
+![RSA](images/Screenshot_25.png)
+
+The content of *id_rsa.pub* copy to file *authorized_keys* our VM to folder **.ssh** in **home** directory :
+
+![authorized_keys](images/Screenshot_30.png)
+
+![authorized_keys](images/Screenshot_31.png)
+
+`ssh d0s@192.168.0.172`
+
+
+And now we can auth withou password!
+
+![ssh](images/Screenshot_32.png)
+
+Othe type of auth will be similar. Genereate pair and auth withou password.
+
 
 ## 4
 
 Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
+
+In our VM we need to have an NAT interface 
+Follow command  `ip a` we foun an IP **10.95.3.4** address of our NAT
+
+![ssh](images/Screenshot_21.png)
+
+
+Go to VM setting on VirtualBox manager and define that Nat2 is a out interface to configuration
+
+![ssh](images/Screenshot_33.png)
+
+Open settings in VM Box File>Perferences>Network
+and add new rule to port forwarding From Host IP **127.0.0.4** with port 1022 we will forfard to **10.95.3.4** with 22 port.
+
+![ssh](images/Screenshot_22.png)
+
+And run test ` ssh d0s@127.0.0.4 -p 1022` :
+
+> **_NOTE_** we need to set port 1022 in our command because in NAT rule we indicated it port
+
+![ssh](images/Screenshot_23.png)
 
 
