@@ -12,7 +12,7 @@
 | Net4 | 172.16.3.0/24  |
 
 
-In defaul in our Virtual Mashines we has an 10.0.2.15/24 network address
+In default in our Virtual Mashines we has an 10.0.2.15/24 network address
 
 ![info](images/Screenshot_1.png)
 
